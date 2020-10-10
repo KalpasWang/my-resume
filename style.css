@@ -164,3 +164,125 @@ header {
 .skill-cards .card3 {
   border-color: #6762a6;
 }
+
+/* 工作經驗 */
+
+#experience {
+  margin-top: 56px;
+}
+
+#experience h2 {
+  font-size: 24px;
+  color: #1736dc;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#experience .timeline {
+  position: relative;
+  margin: 0 auto 56px;
+  width: 60%;
+}
+
+.timeline::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d8d8d8;
+}
+
+.timeline ul {
+  display: inline-block;
+  position: relative;
+  padding: 85px 0 48px;
+  width: 100%;
+}
+
+.timeline ul::before {
+  content: '';
+  background: url(asset/dot-start.png);
+  position: absolute;
+  width: 32px;
+  height: 37px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline ul::after {
+  content: '';
+  background: #D8D8D8;
+  border-radius: 2px;
+  width: 46px;
+  height: 4px;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline ul li {
+  position: relative;
+  width: 46%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: 1px solid #fb56bf;
+  border-radius: 5px;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(odd)::before {
+  content: '';
+  background: url(asset/dot-timeItem.png);
+  position: absolute;
+  width: 24px;
+  height: 28px;
+  top: 0;
+  left: -37px;
+}
+
+.timeline ul li:nth-child(even)::before {
+  content: '';
+  background: url(asset/dot-timeItem.png);
+  position: absolute;
+  width: 24px;
+  height: 28px;
+  top: 0;
+  right: -38px;
+}
+
+.timeline .content {
+  font-size: 12px;
+}
+
+.timeline .time {
+  font-weight: 700;
+}
+
+.timeline .job {
+  font-weight: 900;
+  margin: 12px 0;
+  color: #8A1737;
+}
+
+.timeline .description {
+  margin-top: 12px;
+  font-size: 10px;
+  color: #9b9b9b;
+}
