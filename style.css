@@ -317,7 +317,7 @@ header {
 }
 
 .works-container > .item:hover {
-  box-shadow: 0 1px 5px #aaa;
+  box-shadow: 0 1px 8px #aaa;
 }
 
 .works-container > .item > .text {
@@ -327,14 +327,55 @@ header {
 .works-container a {
   display: block;
   height: 150px;
-}
-
-.works-container a img {
-  max-width: 100%;
-  height: auto;
+  background: url(asset/fb-clone.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 .works-container .text h3 {
   font-weight: 700;
   margin: 10px 0;
+}
+
+/* 關於我 */
+
+#about {
+  margin-bottom: 74px;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fb56bf;
+  margin-bottom: 46px;
+}
+
+#about .bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio img {
+  margin-right: 46px;
+}
+
+.bio p {
+  font-size: 14px;
+  line-height: 2;
+  max-width: 400px;
+}
+
+/* 頁尾 */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87px;
+  background: url(asset/img-Looper-bg.png) no-repeat center center;
+  background-size: cover;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
 }
